@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796A</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="background_light">#f4f4f4</color>
+    <color name="googleplus">#dc4e41</color>
+</resources>

@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="marcosve.findcolor.findthecolor.Main_Scores"
+    tools:showIn="@layout/activity_main_scores">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_4dp"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            card_view:cardCornerRadius="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="User"
+                    android:textColor="@color/colorAccent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:background="#dfdfdf" />
+
+                <TextView
+                    android:id="@+id/name_scores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="Marcos Vicente"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_email_black_24dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_8dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:orientation="vertical"
+                        android:paddingTop="12dp">
+
+                        <TextView
+                            android:id="@+id/email_scores"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="marcosvicente@gmail.com"
+                            android:textColor="#000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/typeUser_score"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageView"
+                            android:text="Google"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- A CardView that contains a scores level 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_scores_level1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_4dp"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/margin_4dp"
+            android:visibility="gone"
+            card_view:cardCornerRadius="2dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="Level 1"
+                    android:textColor="@color/colorAccent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:background="#dfdfdf" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--score1-->
+                    <LinearLayout
+                        android:id="@+id/layout_score_one_level1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_8dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/margin_8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/score_one_level1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="98"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dateScore_one_level1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16/18/2016" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--score2-->
+                    <LinearLayout
+                        android:id="@+id/layout_score_two_level1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="@dimen/margin_8dp"
+                            android:layout_marginLeft="16dp"
+                            android:background="#dfdfdf" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/score_two_level1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="98"
+
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dateScore_tow_level1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16/18/2016" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--score3-->
+                    <LinearLayout
+                        android:id="@+id/layout_score_three_level1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="@dimen/margin_8dp"
+                            android:layout_marginLeft="16dp"
+                            android:background="#dfdfdf" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/score_three_level1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="98"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dateScore_three_level1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16/18/2016" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--score4-->
+                    <LinearLayout
+                        android:id="@+id/layout_score_for_level1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="@dimen/margin_8dp"
+                            android:layout_marginLeft="16dp"
+                            android:background="#dfdfdf" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/score_for_level1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="98"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dateScore_for_level1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16/18/2016" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- A CardView that contains a scores level 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_scores_level2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_4dp"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/margin_4dp"
+            android:visibility="gone"
+            card_view:cardCornerRadius="2dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="Level 2"
+                    android:textColor="@color/colorAccent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:background="#dfdfdf" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--score1-->
+                    <LinearLayout
+                        android:id="@+id/layout_score_one_level2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_8dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/margin_8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/score_one_level2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="98"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dateScore_one_level2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16/18/2016" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--score2-->
+                    <LinearLayout
+                        android:id="@+id/layout_score_two_level2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="@dimen/margin_8dp"
+                            android:layout_marginLeft="16dp"
+                            android:background="#dfdfdf" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/score_two_level2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="98"
+
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dateScore_tow_level2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16/18/2016" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--score3-->
+                    <LinearLayout
+                        android:id="@+id/layout_score_three_level2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="@dimen/margin_8dp"
+                            android:layout_marginLeft="16dp"
+                            android:background="#dfdfdf" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/score_three_level2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="98"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dateScore_three_level2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16/18/2016" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--score4-->
+                    <LinearLayout
+                        android:id="@+id/layout_score_for_level2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="@dimen/margin_8dp"
+                            android:layout_marginLeft="16dp"
+                            android:background="#dfdfdf" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/score_for_level2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="98"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dateScore_for_level2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16/18/2016" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- A CardView that contains a scores level 3 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_scores_level3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_marginRight="@dimen/margin_8dp"
+            android:layout_marginTop="@dimen/margin_4dp"
+            android:visibility="gone"
+            card_view:cardCornerRadius="2dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="Level 3"
+                    android:textColor="@color/colorAccent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:background="#dfdfdf" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--score1-->
+                    <LinearLayout
+                        android:id="@+id/layout_score_one_level3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_8dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/margin_8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/score_one_level3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="98"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dateScore_one_level3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16/18/2016" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--score2-->
+                    <LinearLayout
+                        android:id="@+id/layout_score_two_level3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="@dimen/margin_8dp"
+                            android:layout_marginLeft="16dp"
+                            android:background="#dfdfdf" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/score_two_level3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="98"
+
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dateScore_tow_level3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16/18/2016" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--score3-->
+                    <LinearLayout
+                        android:id="@+id/layout_score_three_level3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="@dimen/margin_8dp"
+                            android:layout_marginLeft="16dp"
+                            android:background="#dfdfdf" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/score_three_level3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="98"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dateScore_three_level3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16/18/2016" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--score4-->
+                    <LinearLayout
+                        android:id="@+id/layout_score_for_level3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_8dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="@dimen/margin_8dp"
+                            android:layout_marginLeft="16dp"
+                            android:background="#dfdfdf" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:layout_marginRight="@dimen/activity_horizontal_margin"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/score_for_level3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="98"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/dateScore_for_level3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="16/18/2016" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

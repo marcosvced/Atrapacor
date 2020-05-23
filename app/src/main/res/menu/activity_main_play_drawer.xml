@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:title="single">
+        <item
+            android:id="@+id/nav_scores"
+            android:icon="@drawable/ic_star_black_24dp"
+            android:title="@string/scores" />
+        <item
+            android:id="@+id/nav_records"
+            android:icon="@drawable/ic_stars_black_24dp"
+            android:title="@string/records" />
+
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/tools" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_cancel_black_24dp"
+            android:title="@string/singout" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="@string/share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_send_black_24dp"
+                android:title="@string/contactwithmy" />
+        </menu>
+    </item>
+
+</menu>
